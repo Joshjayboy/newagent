@@ -951,7 +951,7 @@ const HomeScreen = () => {
         sx={{
           backgroundColor: "rgb(212, 145, 31)",
           color: "white",
-          overflow: "hidden",
+          // overflow: "hidden",
           width: "100%", // Adjust as necessary
           pt: 2,
           pb: 2,
@@ -977,6 +977,7 @@ const HomeScreen = () => {
             fontSize: "38px",
             mt: 10,
             mb: 7,
+            fontWeight: 700,
           }}
         >
           Инфраструктура
@@ -1101,12 +1102,14 @@ const HomeScreen = () => {
         sx={{
           ml: 10,
           mr: 10,
+          pt: 9,
         }}
       >
         <Box
           sx={{
             fontSize: "34px",
             pb: 2,
+            fontWeight: 700,
           }}
         >
           Отделка квартир
