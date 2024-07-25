@@ -489,14 +489,15 @@ const HomeScreen = () => {
           backgroundColor: "rgb(87, 87, 87);",
           pt: 5,
           color: "white",
-          pl: 8,
-          pr: 8,
+          pl: 48,
+          pr: 48,
         }}
       >
         <Box
           sx={{
             mb: 9,
             fontSize: "38px",
+            color: "white",
           }}
         >
           О проекте
@@ -634,12 +635,17 @@ const HomeScreen = () => {
       {/* diagrame one */}
       <Box
         sx={{
-          backgroundColor: "rgb(87, 87, 87);",
+          backgroundColor: "rgb(87, 87, 87)",
+          pl: 28,
+          pr: 28,
+          pt: 10,
+          pb: 20,
         }}
       >
         <Box
           sx={{
             fontSize: "38px",
+            color: "white",
           }}
         >
           Стоимость квартир
@@ -660,7 +666,13 @@ const HomeScreen = () => {
               justifyContent: "space-between",
             }}
           >
-            <Grid item xs={3}>
+            <Grid
+              item
+              xs={3}
+              sx={{
+                pr: 2,
+              }}
+            >
               <img
                 alt="this"
                 src="https://optim.tildacdn.com/tild3633-6237-4366-b330-383533333662/-/cover/312x343/center/center/-/format/webp/4__2.png"
@@ -685,6 +697,8 @@ const HomeScreen = () => {
                 variant="outlined"
                 sx={{
                   color: "#d4911f",
+                  mb: 2,
+                  mt: 1,
                 }}
               >
                 Все планировки
