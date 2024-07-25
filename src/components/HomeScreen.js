@@ -1102,7 +1102,8 @@ const HomeScreen = () => {
         sx={{
           ml: 10,
           mr: 10,
-          pt: 9,
+          pt: 15,
+          pb: 15,
         }}
       >
         <Box
@@ -1206,6 +1207,7 @@ const HomeScreen = () => {
             display: "flex",
             justifyContent: "center",
             fontSize: "24px",
+            pb: 5,
           }}
         >
           Действует льготная ипотека от 5%
