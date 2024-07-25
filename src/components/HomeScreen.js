@@ -81,6 +81,8 @@ const HomeScreen = () => {
         sx={{
           ml: 2,
           mr: 2,
+          mt: 3,
+          mb: 3,
         }}
       >
         <Box
@@ -245,7 +247,7 @@ const HomeScreen = () => {
           backgroundPosition: "center", // Center the image within the Box
           height: "100vh", // Set a height to ensure the Box is visible
           color: "white", // Set text color to white for contrast
-          textAlign: "center", // Center the text horizontally
+          // textAlign: "center", // Center the text horizontally
           opacity:
             "linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7))",
           opacity: 0.5,
@@ -257,6 +259,7 @@ const HomeScreen = () => {
           sx={{
             fontSize: "62px",
             color: "black",
+            pl: 12,
           }}
         >
           ЖК Краснофлотская
@@ -266,6 +269,7 @@ const HomeScreen = () => {
             // color: "rgb(242, 196, 118)",
             color: "black",
             fontSize: "32px",
+            pl: 12,
           }}
         >
           Квартиры от 3 605 000 рублей*
@@ -275,6 +279,8 @@ const HomeScreen = () => {
             // color: "rgb(242, 196, 118)",
             color: "black",
             fontSize: "32px",
+            pl: 12,
+            pb: 9,
           }}
         >
           Квартиры в ипотеку ПСК от 5,3%-11,9% от 15 463 руб/мес
@@ -283,6 +289,8 @@ const HomeScreen = () => {
           sx={{
             display: "flex",
             justifyContent: "center",
+            color: "rgb(242, 196, 118)",
+            pb: 5,
           }}
         >
           Скидка до 11% на все квартиры действует еще:
@@ -293,6 +301,7 @@ const HomeScreen = () => {
               display: "flex",
               // justifyContent: "space-between",
               justifyContent: "center",
+              pb: 5,
             }}
           >
             <Box
@@ -333,19 +342,32 @@ const HomeScreen = () => {
           </Box>
           {/* {value.s} seconds {value.ms} milliseconds */}
         </Box>
-        <Button
-          variant="contained"
+
+        <Box
           sx={{
-            backgroundColor: "rgb(242, 196, 118)",
+            display: "flex",
+            justifyContent: "center",
+            textAlign: "center", // Center the text horizontally
             mb: 18,
-            color: "black",
           }}
         >
-          Contained
-        </Button>
+          <Button
+            variant="contained"
+            sx={{
+              backgroundColor: "rgb(242, 196, 118)",
+
+              color: "black",
+            }}
+          >
+            Contained
+          </Button>
+        </Box>
+
         <Box
           sx={{
             color: "black",
+            display: "flex",
+            justifyContent: "center",
           }}
         >
           г. Красноармейск, ул. Краснофлотская, д. 9а
@@ -358,6 +380,8 @@ const HomeScreen = () => {
           backgroundColor: "rgb(212, 145, 31)",
           pl: 10,
           pr: 10,
+          pb: 5,
+          pt: 5,
         }}
       >
         <Box
@@ -421,7 +445,10 @@ const HomeScreen = () => {
                 color: "white",
               }}
             >
-              Льготная ипотека (предоставляется ПАО "Сбербанк России")
+              Льготная ипотека
+              <br />
+              (предоставляется ПАО
+              <br /> "Сбербанк России")
             </Typography>
           </Box>
           <Box>
@@ -842,6 +869,35 @@ const HomeScreen = () => {
           mb: 10,
         }}
       >
+        <Box
+          sx={{
+            pr: 6,
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "right",
+              fontSize: "34px",
+              pb: 3,
+              fontWeight: 700,
+            }}
+          >
+            Планировки секций
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "right",
+              fontSize: "24px",
+              pb: 3,
+              fontWeight: 200,
+            }}
+          >
+            Дом состоит из 4-х секций
+          </Box>
+        </Box>
+
         <Box sx={{ flexGrow: 1 }}>
           <Grid
             container
