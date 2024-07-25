@@ -248,20 +248,23 @@ const HomeScreen = () => {
           textAlign: "center", // Center the text horizontally
           opacity:
             "linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7))",
-          // opacity: 0.5,
+          opacity: 0.5,
+          // background: 'rgba(0, 0, 0, 0.3)',
           paddingTop: "40px", // Add padding to center the text vertically
         }}
       >
         <Box
           sx={{
             fontSize: "62px",
+            color: "black",
           }}
         >
           ЖК Краснофлотская
         </Box>
         <Box
           sx={{
-            color: "rgb(242, 196, 118)",
+            // color: "rgb(242, 196, 118)",
+            color: "black",
             fontSize: "32px",
           }}
         >
@@ -269,7 +272,8 @@ const HomeScreen = () => {
         </Box>
         <Box
           sx={{
-            color: "rgb(242, 196, 118)",
+            // color: "rgb(242, 196, 118)",
+            color: "black",
             fontSize: "32px",
           }}
         >
@@ -284,23 +288,76 @@ const HomeScreen = () => {
           Скидка до 11% на все квартиры действует еще:
         </Box>
         <Box>
-          {value.s} seconds {value.ms} milliseconds
+          <Box
+            sx={{
+              display: "flex",
+              // justifyContent: "space-between",
+              justifyContent: "center",
+            }}
+          >
+            <Box
+              sx={{
+                fontSize: "64px",
+                pr: 10,
+                color: "black",
+              }}
+            >
+              16
+            </Box>
+            <Box
+              sx={{
+                fontSize: "64px",
+                pr: 10,
+                color: "black",
+              }}
+            >
+              51
+            </Box>
+            <Box
+              sx={{
+                fontSize: "64px",
+                pr: 10,
+                color: "black",
+              }}
+            >
+              6 {value.ms}
+            </Box>
+            <Box
+              sx={{
+                fontSize: "64px",
+                color: "black",
+              }}
+            >
+              {value.s}
+            </Box>
+          </Box>
+          {/* {value.s} seconds {value.ms} milliseconds */}
         </Box>
         <Button
           variant="contained"
           sx={{
             backgroundColor: "rgb(242, 196, 118)",
+            mb: 18,
+            color: "black",
           }}
         >
           Contained
         </Button>
-        <Box>г. Красноармейск, ул. Краснофлотская, д. 9а</Box>
+        <Box
+          sx={{
+            color: "black",
+          }}
+        >
+          г. Красноармейск, ул. Краснофлотская, д. 9а
+        </Box>
       </Box>
       {/* end of here */}
       {/* section */}
       <Box
         sx={{
           backgroundColor: "rgb(212, 145, 31)",
+          pl: 10,
+          pr: 10,
         }}
       >
         <Box
