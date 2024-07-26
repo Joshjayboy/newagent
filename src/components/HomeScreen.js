@@ -459,7 +459,18 @@ const HomeScreen = () => {
                     color: "rgb(242, 196, 118)",
                   }}
                 >
-                  <Button>Оставить заявку</Button>
+                  <Button
+                    sx={{
+                      backgroundColor: "rgb(242, 196, 118)",
+                      borderRadius: "30px",
+                      p: 2,
+                      fontSize: "16px",
+                      fontWeight: 700,
+                    }}
+                    variant="contained"
+                  >
+                    Оставить заявку
+                  </Button>
                 </Typography>
 
                 <div className="imageMarked" />
