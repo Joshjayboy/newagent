@@ -812,8 +812,8 @@ const HomeScreen = () => {
       <Box
         sx={{
           backgroundColor: "rgb(87, 87, 87)",
-          pl: 28,
-          pr: 28,
+          pl: 18,
+          pr: 18,
           pt: 10,
           pb: 20,
         }}
@@ -875,6 +875,7 @@ const HomeScreen = () => {
                   color: "#d4911f",
                   mb: 2,
                   mt: 1,
+                  borderRadius: "30px",
                 }}
               >
                 Все планировки
@@ -884,6 +885,7 @@ const HomeScreen = () => {
                 variant="contained"
                 sx={{
                   backgroundColor: "#d4911f",
+                  borderRadius: "30px",
                 }}
               >
                 Узнать подробности
@@ -892,7 +894,7 @@ const HomeScreen = () => {
             <Grid item xs={3}>
               <img
                 alt="this"
-                src="https://optim.tildacdn.com/tild3633-6237-4366-b330-383533333662/-/cover/312x343/center/center/-/format/webp/4__2.png"
+                src="https://optim.tildacdn.com/tild3336-6530-4732-b233-373563616533/-/cover/260x286/center/center/-/format/webp/2_1.png"
               />
               <Box
                 sx={{
@@ -914,6 +916,8 @@ const HomeScreen = () => {
                 variant="outlined"
                 sx={{
                   color: "#d4911f",
+                  borderRadius: "30px",
+                  mb: 2,
                 }}
               >
                 Все планировки
@@ -923,6 +927,7 @@ const HomeScreen = () => {
                 variant="contained"
                 sx={{
                   backgroundColor: "#d4911f",
+                  borderRadius: "30px",
                 }}
               >
                 Узнать подробности
@@ -931,7 +936,7 @@ const HomeScreen = () => {
             <Grid item xs={3}>
               <img
                 alt="this"
-                src="https://optim.tildacdn.com/tild3633-6237-4366-b330-383533333662/-/cover/312x343/center/center/-/format/webp/4__2.png"
+                src="https://optim.tildacdn.com/tild6364-3264-4730-b764-383930643339/-/cover/260x286/center/center/-/format/webp/1_1.png"
               />
               <Box
                 sx={{
@@ -953,6 +958,8 @@ const HomeScreen = () => {
                 variant="outlined"
                 sx={{
                   color: "#d4911f",
+                  borderRadius: "30px",
+                  mb: 2,
                 }}
               >
                 Все планировки
@@ -962,6 +969,7 @@ const HomeScreen = () => {
                 variant="contained"
                 sx={{
                   backgroundColor: "#d4911f",
+                  borderRadius: "30px",
                 }}
               >
                 Узнать подробности
@@ -970,7 +978,7 @@ const HomeScreen = () => {
             <Grid item xs={3}>
               <img
                 alt="this"
-                src="https://optim.tildacdn.com/tild3633-6237-4366-b330-383533333662/-/cover/312x343/center/center/-/format/webp/4__2.png"
+                src="https://optim.tildacdn.com/tild3032-6131-4933-b564-626632393138/-/cover/260x286/center/center/-/format/webp/1_1.png"
               />
               <Box
                 sx={{
@@ -992,6 +1000,8 @@ const HomeScreen = () => {
                 variant="outlined"
                 sx={{
                   color: "#d4911f",
+                  borderRadius: "30px",
+                  mb: 2,
                 }}
               >
                 Все планировки
@@ -1001,6 +1011,7 @@ const HomeScreen = () => {
                 variant="contained"
                 sx={{
                   backgroundColor: "#d4911f",
+                  borderRadius: "30px",
                 }}
               >
                 Узнать подробности
