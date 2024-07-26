@@ -142,8 +142,49 @@ const HomeScreen = () => {
             justifyContent: "space-between",
           }}
         >
-          <Box>ЖК Краснофлотская</Box>
-          <Box>+7 (495) 363-16-40</Box>
+          <Box
+            sx={{
+              color: "#d4911f",
+              fontSize: "24px",
+              fontWeight: 700,
+            }}
+          >
+            ЖК Краснофлотская
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <Box
+              sx={{
+                fontSize: "16px",
+                fontWeight: 700,
+              }}
+            >
+              +7 (495) 363-16-40
+            </Box>
+
+            <Box
+              sx={{
+                pl: 1,
+              }}
+            >
+              <Button
+                sx={{
+                  backgroundColor: "#d4911f",
+                  borderRadius: "30px",
+                  p: 1,
+                  fontSize: "14px",
+                  fontWeight: 700,
+                }}
+                variant="contained"
+              >
+                Оставить заявку
+              </Button>
+            </Box>
+          </Box>
         </Box>
       </Box>
       <hr />
@@ -473,150 +514,14 @@ const HomeScreen = () => {
                   </Button>
                 </Typography>
 
-                <div className="imageMarked" />
+                {/* <div className="imageMarked" /> */}
               </Typography>
             </Box>
           </ImageIconButton>
         ))}
       </Box>
       {/* end of test here */}
-      <Box
-        sx={{
-          backgroundImage:
-            "url('https://optim.tildacdn.com/tild3632-6534-4261-b962-646639666431/-/resize/563x/-/format/webp/IMG_2989.jpg')",
-          backgroundSize: "cover", // Ensure the image covers the entire Box
-          backgroundRepeat: "no-repeat", // Prevent the image from repeating
-          backgroundPosition: "center", // Center the image within the Box
-          height: "100vh", // Set a height to ensure the Box is visible
-          color: "white", // Set text color to white for contrast
-          // textAlign: "center", // Center the text horizontally
-          // opacity:
-          //   "linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7))",
 
-          opacity: 0.5,
-          // background: 'rgba(0, 0, 0, 0.3)',
-          background: "#000",
-          paddingTop: "40px", // Add padding to center the text vertically
-        }}
-      >
-        <Box
-          sx={{
-            fontSize: "62px",
-            color: "black",
-            pl: 12,
-          }}
-        >
-          ЖК Краснофлотская
-        </Box>
-        <Box
-          sx={{
-            // color: "rgb(242, 196, 118)",
-            color: "black",
-            fontSize: "32px",
-            pl: 12,
-          }}
-        >
-          Квартиры от 3 605 000 рублей*
-        </Box>
-        <Box
-          sx={{
-            // color: "rgb(242, 196, 118)",
-            color: "black",
-            fontSize: "32px",
-            pl: 12,
-            pb: 9,
-          }}
-        >
-          Квартиры в ипотеку ПСК от 5,3%-11,9% от 15 463 руб/мес
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            color: "rgb(242, 196, 118)",
-            pb: 5,
-          }}
-        >
-          Скидка до 11% на все квартиры действует еще:
-        </Box>
-        <Box>
-          <Box
-            sx={{
-              display: "flex",
-              // justifyContent: "space-between",
-              justifyContent: "center",
-              pb: 5,
-            }}
-          >
-            <Box
-              sx={{
-                fontSize: "64px",
-                pr: 10,
-                color: "black",
-              }}
-            >
-              16
-            </Box>
-            <Box
-              sx={{
-                fontSize: "64px",
-                pr: 10,
-                color: "black",
-              }}
-            >
-              51
-            </Box>
-            <Box
-              sx={{
-                fontSize: "64px",
-                pr: 10,
-                color: "black",
-              }}
-            >
-              6 {value.ms}
-            </Box>
-            <Box
-              sx={{
-                fontSize: "64px",
-                color: "black",
-              }}
-            >
-              {value.s}
-            </Box>
-          </Box>
-          {/* {value.s} seconds {value.ms} milliseconds */}
-        </Box>
-
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            textAlign: "center", // Center the text horizontally
-            mb: 18,
-          }}
-        >
-          <Button
-            variant="contained"
-            sx={{
-              backgroundColor: "rgb(242, 196, 118)",
-
-              color: "black",
-            }}
-          >
-            Contained
-          </Button>
-        </Box>
-
-        <Box
-          sx={{
-            color: "black",
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          г. Красноармейск, ул. Краснофлотская, д. 9а
-        </Box>
-      </Box>
       {/* end of here */}
       {/* section */}
       <Box
