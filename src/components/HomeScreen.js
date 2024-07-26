@@ -16,10 +16,13 @@ import MenuItem from "@mui/material/MenuItem";
 // import AdbIcon from "@mui/icons-material/Adb";
 import Grid from "@mui/material/Grid";
 import { keyframes } from "@emotion/react";
-import { styled } from "@mui/system";
+// import { styled } from "@mui/system";
+import { styled } from "@mui/material/styles";
 import { List, ListItem, ListItemText } from "@mui/material";
 import { createTimeModel, useTimeModel } from "react-compound-timer";
 import TextField from "@mui/material/TextField";
+import ButtonBase from "@mui/material/ButtonBase";
+
 const HomeScreen = () => {
   const pages = [
     "О проекте",
@@ -75,6 +78,52 @@ const HomeScreen = () => {
     direction: "backward",
   });
   const { value } = useTimeModel(timer);
+  // test
+  const ImageBackdrop = styled("div")(({ theme }) => ({
+    position: "absolute",
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    background: "#000",
+    opacity: 0.5,
+    transition: theme.transitions.create("opacity"),
+  }));
+  const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
+    position: "relative",
+    display: "block",
+    padding: 0,
+    borderRadius: 0,
+    height: "100vh",
+    // height: "40vh",
+    [theme.breakpoints.down("md")]: {
+      width: "100% !important",
+      height: 100,
+    },
+    "& .imageTitle": {
+      position: "relative",
+      padding: `${theme.spacing(2)} ${theme.spacing(4)} 14px`,
+    },
+    "& .imageMarked": {
+      height: 3,
+      width: 18,
+      // background: theme.palette.common.white,
+      position: "absolute",
+      bottom: -2,
+      left: "calc(50% - 9px)",
+      transition: theme.transitions.create("opacity"),
+    },
+  }));
+
+  const images = [
+    {
+      url: "https://optim.tildacdn.com/tild3632-6534-4261-b962-646639666431/-/resize/563x/-/format/webp/IMG_2989.jpg",
+      title: "Reading",
+      width: "100vw",
+    },
+  ];
+
+  // end test
   return (
     <>
       <Box
@@ -83,6 +132,7 @@ const HomeScreen = () => {
           mr: 2,
           mt: 3,
           mb: 3,
+          overflowY: "hidden",
         }}
       >
         <Box
@@ -238,6 +288,55 @@ const HomeScreen = () => {
       </AppBar>
       {/* end app bar */}
       {/* here */}
+      {/* test here */}
+      <Box sx={{ mt: 0, display: "flex", flexWrap: "wrap" }}>
+        {images.map((image) => (
+          <ImageIconButton
+            key={image.title}
+            style={{
+              width: image.width,
+            }}
+          >
+            <Box
+              sx={{
+                position: "absolute",
+                left: 0,
+                right: 0,
+                top: 0,
+                bottom: 0,
+                backgroundSize: "cover",
+                backgroundPosition: "center 40%",
+                backgroundImage: `url(${image.url})`,
+              }}
+            />
+            <ImageBackdrop className="imageBackdrop" />
+            <Box
+              sx={{
+                position: "absolute",
+                left: 0,
+                right: 0,
+                top: 0,
+                bottom: 0,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "common.white",
+              }}
+            >
+              <Typography
+                component="h3"
+                variant="h6"
+                color="inherit"
+                className="imageTitle"
+              >
+                {image.title} Great
+                <div className="imageMarked" />
+              </Typography>
+            </Box>
+          </ImageIconButton>
+        ))}
+      </Box>
+      {/* end of test here */}
       <Box
         sx={{
           backgroundImage:
@@ -248,10 +347,12 @@ const HomeScreen = () => {
           height: "100vh", // Set a height to ensure the Box is visible
           color: "white", // Set text color to white for contrast
           // textAlign: "center", // Center the text horizontally
-          opacity:
-            "linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7))",
+          // opacity:
+          //   "linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7))",
+
           opacity: 0.5,
           // background: 'rgba(0, 0, 0, 0.3)',
+          background: "#000",
           paddingTop: "40px", // Add padding to center the text vertically
         }}
       >
@@ -1020,7 +1121,7 @@ const HomeScreen = () => {
       </Box>
       {/* end of text */}
       {/* image section */}
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1, overflowX: "hidden" }}>
         <Grid container spacing={2}>
           <Grid item xs={8}>
             <img
