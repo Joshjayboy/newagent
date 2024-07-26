@@ -86,6 +86,7 @@ const HomeScreen = () => {
     top: 0,
     bottom: 0,
     background: "#000",
+    // opacity: 0,
     opacity: 0.5,
     transition: theme.transitions.create("opacity"),
   }));
@@ -318,18 +319,149 @@ const HomeScreen = () => {
                 top: 0,
                 bottom: 0,
                 display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
+                // alignItems: "center",
+                // justifyContent: "center",
                 color: "common.white",
               }}
             >
               <Typography
-                component="h3"
-                variant="h6"
-                color="inherit"
-                className="imageTitle"
+              // component="h3"
+              // variant="h6"
+              // color="inherit"
+              // className="imageTitle"
               >
-                {image.title} Great
+                <Typography
+                  sx={{
+                    display: "flex",
+                    justifyContent: "left",
+                    pt: 5,
+                    pl: 9,
+                    fontSize: "62px",
+                    fontWeight: 700,
+                  }}
+                >
+                  ЖК Краснофлотская
+                </Typography>
+                <Typography
+                  sx={{
+                    display: "flex",
+                    justifyContent: "left",
+                    pt: 3,
+                    pl: 9,
+                    fontSize: "22px",
+                    fontWeight: 700,
+                    color: "rgb(242, 196, 118)",
+                  }}
+                >
+                  Квартиры от 3 605 000 рублей*
+                </Typography>
+                <Typography
+                  sx={{
+                    display: "flex",
+                    justifyContent: "left",
+                    // pt: 2,
+                    pl: 9,
+                    fontSize: "22px",
+                    fontWeight: 700,
+                    color: "rgb(242, 196, 118)",
+                  }}
+                >
+                  Квартиры в ипотеку ПСК от 5,3%-11,9% от 15
+                </Typography>
+                <Typography
+                  sx={{
+                    display: "flex",
+                    justifyContent: "left",
+                    // pt: 2,
+                    pl: 9,
+                    fontSize: "22px",
+                    fontWeight: 700,
+                    color: "rgb(242, 196, 118)",
+                  }}
+                >
+                  463 руб/мес
+                </Typography>
+                <Typography
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    pt: 3,
+                    // pl: 9,
+                    fontSize: "22px",
+                    fontWeight: 700,
+                    color: "rgb(242, 196, 118)",
+                  }}
+                >
+                  <span
+                    style={{
+                      color: "white",
+                    }}
+                  >
+                    Скидка до 11%
+                  </span>
+                  на все квартиры действует еще:
+                </Typography>
+                <Typography>
+                  <Typography
+                    sx={{
+                      display: "flex",
+                      // justifyContent: "space-between",
+                      justifyContent: "center",
+                      pb: 5,
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        fontSize: "64px",
+                        pr: 10,
+                        color: "white",
+                      }}
+                    >
+                      16
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontSize: "64px",
+                        pr: 10,
+                        color: "white",
+                      }}
+                    >
+                      51
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontSize: "64px",
+                        pr: 10,
+                        color: "white",
+                      }}
+                    >
+                      6 {value.ms}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontSize: "64px",
+                        color: "white",
+                      }}
+                    >
+                      {value.s}
+                    </Typography>
+                  </Typography>
+                  {/* {value.s} seconds {value.ms} milliseconds */}
+                </Typography>
+                <Typography
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    pt: 3,
+                    pl: 9,
+                    fontSize: "22px",
+                    fontWeight: 700,
+                    color: "rgb(242, 196, 118)",
+                  }}
+                >
+                  <Button>Оставить заявку</Button>
+                </Typography>
+
                 <div className="imageMarked" />
               </Typography>
             </Box>
